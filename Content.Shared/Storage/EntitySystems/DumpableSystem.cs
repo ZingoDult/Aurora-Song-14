@@ -26,7 +26,7 @@ public sealed class DumpableSystem : EntitySystem
     {
         base.Initialize();
         _itemQuery = GetEntityQuery<ItemComponent>();
-        SubscribeLocalEvent<DumpableComponent, AfterInteractEvent>(OnAfterInteract, after: new[]{ typeof(SharedEntityStorageSystem) });
+        SubscribeLocalEvent<DumpableComponent, AfterInteractEvent>(OnAfterInteract, after: new[] { typeof(SharedEntityStorageSystem) });
         SubscribeLocalEvent<DumpableComponent, GetVerbsEvent<AlternativeVerb>>(AddDumpVerb);
         SubscribeLocalEvent<DumpableComponent, GetVerbsEvent<UtilityVerb>>(AddUtilityVerbs);
         SubscribeLocalEvent<DumpableComponent, DumpableDoAfterEvent>(OnDoAfter);
@@ -67,7 +67,7 @@ public sealed class DumpableSystem : EntitySystem
                 StartDoAfter(uid, args.Target, args.User, dumpable);//Had multiplier of 0.6f
             },
             Text = Loc.GetString("dump-verb-name"),
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/drop.svg.192dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/drop.svg.192dpi.png")),
         };
         args.Verbs.Add(verb);
     }
@@ -116,7 +116,7 @@ public sealed class DumpableSystem : EntitySystem
             delay += itemSize.Weight;
         }
 
-        delay *= (float) dumpable.DelayPerItem.TotalSeconds * dumpable.Multiplier;
+        delay *= (float)dumpable.DelayPerItem.TotalSeconds * dumpable.Multiplier;
 
         _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, userUid, delay, new DumpableDoAfterEvent(), storageUid, target: targetUid, used: storageUid)
         {
@@ -151,6 +151,38 @@ public sealed class DumpableSystem : EntitySystem
         if (evt.PlaySound)
         {
             _audio.PlayPredicted(component.DumpSound, uid, args.User);
+        }
+    }
+    public void DumpContents(EntityUid storageUid, EntityUid userUid, EntityUid? targetUid = null) //Aurora: Rats shoving shit in they mousth (Rodentia mouth dump code)
+    {
+        if (!TryComp<StorageComponent>(storageUid, out var storage) || storage.Container.ContainedEntities.Count == 0)
+            return;
+
+        var dumpQueue = new Queue<EntityUid>(storage.Container.ContainedEntities);
+        var target = targetUid ?? storageUid;
+
+        var evt = new DumpEvent(dumpQueue, userUid, false, false);
+        RaiseLocalEvent(target, ref evt);
+
+        if (!evt.Handled)
+        {
+            var targetPos = _transformSystem.GetWorldPosition(storageUid);
+
+            foreach (var entity in dumpQueue)
+            {
+                var transform = Transform(entity);
+                _transformSystem.SetWorldPositionRotation(
+                    entity,
+                    targetPos + _random.NextVector2Box() / 4,
+                    _random.NextAngle(),
+                    transform
+                );
+            }
+        }
+
+        if (evt.PlaySound && TryComp<DumpableComponent>(storageUid, out var dumpable))
+        {
+            _audio.PlayPredicted(dumpable.DumpSound, storageUid, userUid);
         }
     }
 }
