@@ -1,8 +1,4 @@
-using Content.Server.Actions;
-using Content.Server.Bed.Components;
-using Content.Server.Body.Systems;
-using Content.Server.Power.EntitySystems;
-using Content.Shared._EE.Silicon.Components;
+using Content.Shared._EE.Silicon.Components; // IPC
 using Content.Shared.Bed;
 using Content.Shared.Bed.Components;
 using Content.Shared.Bed.Sleep;
