@@ -34,7 +34,7 @@ public sealed class GuideEntryPrototypeTests
             });
 
             // Avoid styleguide update limit
-            await client.WaitRunTicks(2);
+            await client.WaitRunTicks(10);
         }
 
         await pair.CleanReturnAsync();
