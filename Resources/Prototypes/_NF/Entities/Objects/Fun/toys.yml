@@ -940,9 +940,9 @@
     useSound:
       path: /Audio/_NF/Voice/Goblin/goblin_cackle_3.ogg
   - type: StinkyTrait
-  - type: FoodSequenceElement
-    entries:
-      CottonBurger: GoblinPlushie
+#  - type: FoodSequenceElement
+#    entries:
+#      CottonBurger: GoblinPlushie
 
 #region toy guns
 - type: entity
