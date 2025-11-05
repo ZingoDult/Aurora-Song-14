@@ -4784,3 +4784,12 @@ Entries:
   id: 8688
   time: '2025-11-04T18:38:18.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/568
+- author: GreyScaleHarlequin
+  changes:
+    - type: Tweak
+      message: >-
+        Changed research to have explosive payloads, and mercfab to not direct
+        link to servers
+  id: 8689
+  time: '2025-11-05T00:19:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/567
