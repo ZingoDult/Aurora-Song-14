@@ -69,7 +69,15 @@ public sealed partial class PowerCellSystem : SharedPowerCellSystem
         }
 
         var frac = args.Charge / args.MaxCharge;
-        var level = (byte)ContentHelpers.RoundToNearestLevels(frac, 1, PowerCellComponent.PowerCellVisualsLevels);
+        // Only show full charge sprite (level 2) when actually at 100%
+        byte level;
+        if (frac >= 1.0f)
+            level = PowerCellComponent.PowerCellVisualsLevels; // Full charge (green/o2)
+        else if (frac > 0f)
+            level = 1; // Partial charge (yellow/o1)
+        else
+            level = 0; // Empty (no overlay)
+
         _sharedAppearanceSystem.SetData(uid, PowerCellVisuals.ChargeLevel, level);
 
         // If this power cell is inside a cell-slot, inform that entity that the power has changed (for updating visuals n such).

@@ -179,8 +179,8 @@ namespace Content.Server.Power.EntitySystems
 
             var old = battery.CurrentCharge;
             battery.CurrentCharge = MathHelper.Clamp(value, 0, battery.MaxCharge);
-            if (MathHelper.CloseTo(battery.CurrentCharge, old) &&
-                !(old != battery.CurrentCharge && battery.CurrentCharge == battery.MaxCharge))
+            // Only skip event if the charge truly hasn't changed at all
+            if (MathHelper.CloseTo(battery.CurrentCharge, old))
             {
                 return;
             }
