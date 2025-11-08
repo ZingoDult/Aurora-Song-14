@@ -4839,3 +4839,14 @@ Entries:
   id: 8831
   time: '2025-11-07T18:39:13.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/579
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: battered chicken/ fish sprites, cured fish sprite
+    - type: Fix
+      message: deconstructing diagonal walls/ guide entry
+    - type: Fix
+      message: egg cracking errors
+  id: 8832
+  time: '2025-11-08T23:04:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/585
