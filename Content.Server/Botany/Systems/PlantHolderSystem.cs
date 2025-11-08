@@ -88,8 +88,8 @@ public sealed class PlantHolderSystem : EntitySystem
         if (component.Seed == null)
             return 0;
 
-    var result = Math.Max(1, (int)(component.Age * component.Seed.GrowthStages / component.Seed.Maturation));
-    return result;
+        var result = Math.Max(1, (int)(component.Age * component.Seed.GrowthStages / component.Seed.Maturation));
+        return result;
     }
 
     private void OnExamine(Entity<PlantHolderComponent> entity, ref ExaminedEvent args)
