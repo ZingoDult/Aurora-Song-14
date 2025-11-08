@@ -70,7 +70,7 @@
     count: 3
     slice: FoodMeatChickenCutletBattered
   - type: Item
-    inhandVisuals:
+    inhandVisuals: # Aurora - Added explicit inhand visuals, sprite was erroring or missing before
       left:
       - sprite: Objects/Consumable/Food/meat.rsi
         state: generic-pink-inhand-left
@@ -91,7 +91,7 @@
     cycles: 1
     output: FoodBakedNugget
   - type: Item
-    inhandVisuals:
+    inhandVisuals: # Aurora - Added explicit inhand visuals, sprite was erroring or missing before
       left:
       - sprite: Objects/Consumable/Food/meat.rsi
         state: generic-pink-inhand-left
@@ -137,7 +137,7 @@
     cycles: 2
     output: FoodCuredCarpFried
   - type: Item
-    inhandVisuals:
+    inhandVisuals: # Aurora - Added explicit inhand visuals, sprite was erroring or missing before
       left:
       - sprite: Objects/Consumable/Food/meat.rsi
         state: generic-pink-inhand-left

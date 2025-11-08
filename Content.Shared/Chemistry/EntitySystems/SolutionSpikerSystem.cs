@@ -2,7 +2,7 @@ using Content.Shared.Popups;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Interaction;
-using Robust.Shared.Network;
+using Robust.Shared.Network; // Aurora - Added for server-side deletion guard
 
 namespace Content.Shared.Chemistry.EntitySystems;
 
@@ -63,6 +63,8 @@ public sealed class SolutionSpikerSystem : EntitySystem
 
         _popup.PopupClient(Loc.GetString(spikableSource.Popup, ("spiked-entity", target), ("spike-entity", source)), user, user);
         sourceSolution.RemoveAllSolution();
+        // Aurora - Guard entity deletion to server-only to prevent client prediction errors
+        // Client should never predict deletion of networked entities
         if (spikableSource.Delete && _netManager.IsServer)
             QueueDel(source);
 

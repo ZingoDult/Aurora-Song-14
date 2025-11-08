@@ -729,6 +729,9 @@
   - type: Icon
     sprite: _NF/Structures/Walls/reinforced_diagonal.rsi # Frontier: _NF folder
     state: state0
+  - type: Construction # Aurora - Added to fix construction issues
+    graph: Girder
+    node: wallReinforcedDiagonal
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -1067,6 +1070,9 @@
   - type: Icon
     sprite: _NF/Structures/Walls/solid_diagonal.rsi # Frontier: use _NF variant
     state: state0
+  - type: Construction # Aurora - Added to fix construction issues
+    graph: Girder
+    node: wallSolidDiagonal
   - type: Destructible
     thresholds:
     - trigger:
