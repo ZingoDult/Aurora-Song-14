@@ -8,7 +8,13 @@
   },
   "states": [
     {
-      "name": "Mini_Jukebox"
+      "name": "on"
+    },
+    {
+      "name": "off"
+    },
+    {
+      "name": "select"
     }
   ]
 }
