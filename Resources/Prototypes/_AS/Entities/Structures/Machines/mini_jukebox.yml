@@ -1,7 +1,7 @@
 - type: entity
+  parent: [ jukebox, SmallConstructibleMachine ]
   id: MiniJukebox
   name: minijukebox
-  parent: [ jukebox, SmallConstructibleMachine ]
   description: A new machine capable of playing a wide variety of tunes with the cooperation of G.R.N., Enjoyment not guaranteed.
   components:
   - type: StationAiWhitelist
