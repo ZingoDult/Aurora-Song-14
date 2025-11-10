@@ -12,3 +12,19 @@
       Glass: 1
       Bluespace: 2
       Anomalite: 1
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: MiniJukeboxCircuitBoard
+  name: mini jukebox machine board
+  description: A machine printed circuit board for a mini jukebox.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: MiniJukebox
+    stackRequirements:
+      WoodPlank: 5
+      Steel: 1
+      Glass: 3
+      Cable: 1
