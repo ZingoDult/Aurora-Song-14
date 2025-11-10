@@ -4850,3 +4850,10 @@ Entries:
   id: 8832
   time: '2025-11-08T23:04:40.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/585
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Tajaraans are immune to damage from being too cold now
+  id: 8833
+  time: '2025-11-10T23:17:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/578
