@@ -26,11 +26,11 @@
       - id: GasAnalyzer
       - id: HolofanProjector
 
-# Aurora Song - SLE EVA Storage Fill Template
+# Aurora Song - SLE Wall EVA Locker Filled
 - type: entity
-  abstract: true
-  id: StorageFillEVASuitSLE
-  description: Contains a standard issue SLE EVA kit.
+  parent: ASLockerWallEVAColorSLE
+  id: ASLockerWallEVAColorSLEFilled
+  suffix: Filled
   components:
   - type: StorageFill
     contents:
@@ -38,12 +38,6 @@
     - id: ASJetpackSLEFilled
     - id: ClothingShoesBootsMag
     - id: DoubleEmergencyTankO2N2EqualFilled
-
-# Aurora Song - SLE Wall EVA Locker Filled
-- type: entity
-  parent: [ ASLockerWallEVAColorSLE, StorageFillEVASuitSLE ]
-  id: ASLockerWallEVAColorSLEFilled
-  suffix: Filled
 
 # Alias for backward compatibility with maps
 - type: entity

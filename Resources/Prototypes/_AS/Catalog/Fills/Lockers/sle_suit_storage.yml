@@ -6,15 +6,22 @@
   parent: SuitStorageBase
   suffix: SLE Combat
   components:
-  - type: StorageFill
-    contents:
-        - id: NFTankO2N2EqualFilled
-        - id: ClothingOuterHardsuitSleCombat
-        - id: ASClothingMaskGasSLE
-        - id: ASJetpackSLEFilled
-        - id: ASClothingShoesBootsMagSLEFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillSuitStorageSLECombat
   - type: AccessReader
     access: [["Security"]]
+
+- type: entityTable
+  id: FillSuitStorageSLECombat
+  table: !type:AllSelector
+    children:
+    - id: NFTankO2N2EqualFilled
+    - id: ClothingOuterHardsuitSleCombat
+    - id: ASClothingMaskGasSLE
+    - id: ASJetpackSLEFilled
+    - id: ASClothingShoesBootsMagSLEFilled
 
 #Command hardsuit storage (uses combat hardsuit until command hardsuit is created)
 - type: entity
@@ -22,12 +29,19 @@
   parent: SuitStorageBase
   suffix: SLE Command
   components:
-  - type: StorageFill
-    contents:
-        - id: NFTankO2N2EqualFilled
-        - id: ClothingOuterHardsuitSleCombat
-        - id: ASClothingMaskGasSLE
-        - id: ASJetpackSLEFilled
-        - id: ASClothingShoesBootsMagSLEFilled
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillSuitStorageSLECommand
   - type: AccessReader
     access: [["Security"]]
+
+- type: entityTable
+  id: FillSuitStorageSLECommand
+  table: !type:AllSelector
+    children:
+    - id: NFTankO2N2EqualFilled
+    - id: ClothingOuterHardsuitSleCombat
+    - id: ASClothingMaskGasSLE
+    - id: ASJetpackSLEFilled
+    - id: ASClothingShoesBootsMagSLEFilled
