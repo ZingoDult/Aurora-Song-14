@@ -24,7 +24,6 @@
   - type: ActivatableUI
     key: enum.DepartmentBonusDispensationMachineUiKey.Key
   - type: ActivatableUIRequiresAccess
-    singleUser: true
   - type: DepartmentBonusDispensationMachine
     ejectSound:
       path: /Audio/Effects/Cargo/ping.ogg
@@ -58,11 +57,11 @@
     layers:
     - state: dispenser_sr
   - type: DepartmentBonusDispensationMachine
-    targetDepartment: Frontier
+    targetDepartment: Aurora # Aurora Song - Changed from Frontier to Aurora
     allocationRate: 0.1
     withdrawalInterval: 3600  # 1 hour
   - type: AccessReader
-    access: [["Frontier"]]
+    access: [["Aurora"]] # Aurora Song - Changed from Frontier to Aurora
 
 # Medical Department Bonus Machine
 - type: entity

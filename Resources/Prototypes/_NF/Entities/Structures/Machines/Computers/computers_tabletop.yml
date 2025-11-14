@@ -744,7 +744,7 @@
   suffix: Frontier, Tabletop
   components:
   - type: StationBankATM
-    account: Frontier
+    account: Aurora # Aurora Song - Changed from Frontier to Aurora
 
 - type: entity
   parent: BaseComputerTabletopStationAdminBankATM
