@@ -69,11 +69,11 @@
   - type: FlashImmunity
   - type: IntrinsicRadioTransmitter
     channels:
-    - Sle # Aurora Song - Changed from Nfsd to Sle (Station Law Enforcement)
+    - Sle # Aurora Song - Changed from Nfsd to Sle (Sector Law Enforcement)
     - Common
   - type: ActiveRadio
     channels:
-    - Sle # Aurora Song - Changed from Nfsd to Sle (Station Law Enforcement)
+    - Sle # Aurora Song - Changed from Nfsd to Sle (Sector Law Enforcement)
     - Common
   - type: AutoImplant
     implants:
