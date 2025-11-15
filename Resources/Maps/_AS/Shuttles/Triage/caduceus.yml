@@ -3721,13 +3721,6 @@ entities:
     - type: Transform
       pos: 3.5,-9.5
       parent: 1
-- proto: ChemistryHotplateoyed
-  entities:
-  - uid: 546
-    components:
-    - type: Transform
-      pos: 3.5,-8.5
-      parent: 1
 - proto: ClosetL3VirologyFilled
   entities:
   - uid: 103
@@ -8088,7 +8081,7 @@ entities:
     - type: Transform
       pos: 9.5,-12.5
       parent: 1
-- proto: VendingMachineMediDrobenserEVA
+- proto: WallShuttle
   entities:
   - uid: 11
     components:
