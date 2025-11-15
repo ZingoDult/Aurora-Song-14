@@ -2,7 +2,8 @@
 # Based on New Frontier Station 14's Bluespace Grid Event
 # Original implementation: https://github.com/new-frontiers-14/frontier-station-14
 
-- type: entity # duration is in seconds, reoccurrenceDelay/ earliestStart is in minutes
+# duration values are in seconds, reoccurrenceDelay/ earliestStart is in minutes
+- type: entity
   id: ASBluespaceTriageEvent
   parent: BaseStationEventShortDelay
   name: Aurora Song Bluespace Monitoring
