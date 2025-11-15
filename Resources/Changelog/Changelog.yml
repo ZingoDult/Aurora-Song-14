@@ -4811,3 +4811,78 @@ Entries:
   id: 8827
   time: '2025-11-07T07:44:14.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/582
+- author: assignedgod
+  changes:
+    - type: Fix
+      message: Stopped npc chat logging
+  id: 8828
+  time: '2025-11-07T08:34:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/577
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: improper cargo listing (gun)
+  id: 8829
+  time: '2025-11-07T08:38:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/583
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: power cell status indicators
+  id: 8830
+  time: '2025-11-07T18:37:07.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/584
+- author: Vandanna
+  changes:
+    - type: Add
+      message: AAC Tablet
+  id: 8831
+  time: '2025-11-07T18:39:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/579
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: battered chicken/ fish sprites, cured fish sprite
+    - type: Fix
+      message: deconstructing diagonal walls/ guide entry
+    - type: Fix
+      message: egg cracking errors
+  id: 8832
+  time: '2025-11-08T23:04:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/585
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Tajaraans are immune to damage from being too cold now
+  id: 8833
+  time: '2025-11-10T23:17:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/578
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Portable chargers fit in backpacks now
+  id: 8834
+  time: '2025-11-11T01:51:37.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/589
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: 'Extended the docks on the Nyx POI for easier docking. '
+    - type: Tweak
+      message: Gave the Nyx POI a new coat of (floor) paint
+  id: 8835
+  time: '2025-11-11T21:08:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/591
+- author: Vandanna
+  changes:
+    - type: Add
+      message: New objective system
+    - type: Add
+      message: Medic bounty system
+    - type: Fix
+      message: NF -> AS refactors
+    - type: Add
+      message: Bonus dispensation system
+  id: 8836
+  time: '2025-11-15T00:39:28.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/593

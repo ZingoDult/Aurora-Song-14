@@ -1,6 +1,4 @@
 # Aurora Song: AAC Tablet job quick phrases (Aurora Song specific only)
-job-name-medical = Medic
-job-name-service = Service Worker
 job-name-station-representative = Station Representative
 job-name-commissioner = Commissioner
 job-name-medic = Medic
