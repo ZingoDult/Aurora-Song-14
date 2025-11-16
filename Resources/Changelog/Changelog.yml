@@ -4934,3 +4934,10 @@ Entries:
   id: 8840
   time: '2025-11-16T19:23:33.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/587
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: Dying people can now speak!
+  id: 8841
+  time: '2025-11-16T22:41:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/594
