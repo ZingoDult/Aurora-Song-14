@@ -4941,3 +4941,30 @@ Entries:
   id: 8841
   time: '2025-11-16T22:41:25.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/594
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Increased beanbag stun to 35, 3 hits to stun
+    - type: Remove
+      message: secgear from SLE officers, I don't know how that slipped in
+    - type: Fix
+      message: prisoner doors on SLEO
+    - type: Add
+      message: Prison access to access config, ID console
+    - type: Fix
+      message: Prisoner NPCs can be flashed now
+    - type: Add
+      message: new Corpsman glasses, for SLE
+    - type: Add
+      message: new Medic glasses, for Sector Medics
+    - type: Add
+      message: stinger grenades back to SLE Uplink
+    - type: Remove
+      message: more medical machines from Triage event
+    - type: Fix
+      message: patient discharge machine name
+    - type: Tweak
+      message: changed Laika's glasses from Sec -> SLE
+  id: 8842
+  time: '2025-11-17T00:19:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/598
